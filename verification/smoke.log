@@ -1,0 +1,58 @@
+{"time": 1790368277.4432108, "event": "inputs", "train_rows": 18, "eval_rows": 2, "replay_rows": 0, "total_steps": 4, "input_fingerprint": "cb8eaca3ec7d00c5d550592a7390a335acdc1ac6f004719bf4c7ee295c914fea", "runtime": {"python": "3.12.14", "packages": {"torch": "2.14.0", "transformers": "4.57.6", "peft": "0.18.1", "accelerate": "1.15.0", "safetensors": "0.8.0", "bitsandbytes": null}, "cuda": false, "devices": []}, "note": "Input preflight only. train performs tokenizer, sequence, model and target validation before optimization."}
+{"time": 1790368277.4518409, "event": "sequences_validated", "max_tokens": 13, "train_rows": 18, "eval_rows": 2, "replay_rows": 0}
+`torch_dtype` is deprecated! Use `dtype` instead!
+{"time": 1790368277.4793086, "event": "baseline", "eval_loss": 4.094511032104492}
+{"time": 1790368277.4876478, "event": "step", "step": 1, "total_steps": 4, "phase": "fine_tune", "loss": 4.132888317108154, "learning_rate": 0.003, "grad_norm": 0.450237900018692}
+{"time": 1790368277.4901679, "event": "evaluation", "step": 1, "eval_loss": 4.089388847351074, "best_eval_loss": 4.089388847351074}
+{"time": 1790368277.5084333, "event": "checkpoint", "step": 1, "path": "/workspace/scratch/5fab9b179c1e/forge-smoke/full/checkpoint-000001"}
+{"time": 1790368277.5149088, "event": "step", "step": 2, "total_steps": 4, "phase": "fine_tune", "loss": 4.057668447494507, "learning_rate": 0.003, "grad_norm": 0.5339918732643127}
+{"time": 1790368277.516876, "event": "evaluation", "step": 2, "eval_loss": 4.081437110900879, "best_eval_loss": 4.081437110900879}
+{"time": 1790368277.5297437, "event": "checkpoint", "step": 2, "path": "/workspace/scratch/5fab9b179c1e/forge-smoke/full/checkpoint-000002"}
+{"time": 1790368277.5360498, "event": "step", "step": 3, "total_steps": 4, "phase": "fine_tune", "loss": 4.092936754226685, "learning_rate": 0.003, "grad_norm": 0.8193417191505432}
+{"time": 1790368277.538202, "event": "evaluation", "step": 3, "eval_loss": 4.072481632232666, "best_eval_loss": 4.072481632232666}
+{"time": 1790368277.5516078, "event": "checkpoint", "step": 3, "path": "/workspace/scratch/5fab9b179c1e/forge-smoke/full/checkpoint-000003"}
+{"time": 1790368277.5578856, "event": "step", "step": 4, "total_steps": 4, "phase": "fine_tune", "loss": 4.073928356170654, "learning_rate": 0.003, "grad_norm": 0.9564514756202698}
+{"time": 1790368277.5602067, "event": "evaluation", "step": 4, "eval_loss": 4.061085224151611, "best_eval_loss": 4.061085224151611}
+{"time": 1790368277.5728784, "event": "checkpoint", "step": 4, "path": "/workspace/scratch/5fab9b179c1e/forge-smoke/full/checkpoint-000004"}
+{"time": 1790368277.6024723, "event": "completed", "step": 4, "eval_loss": 4.061085224151611, "adapter_zip": "/workspace/scratch/5fab9b179c1e/forge-smoke/full/adapter.zip"}
+{"time": 1790368277.7861307, "event": "inputs", "train_rows": 18, "eval_rows": 2, "replay_rows": 0, "total_steps": 4, "input_fingerprint": "cb8eaca3ec7d00c5d550592a7390a335acdc1ac6f004719bf4c7ee295c914fea", "runtime": {"python": "3.12.14", "packages": {"torch": "2.14.0", "transformers": "4.57.6", "peft": "0.18.1", "accelerate": "1.15.0", "safetensors": "0.8.0", "bitsandbytes": null}, "cuda": false, "devices": []}, "note": "Input preflight only. train performs tokenizer, sequence, model and target validation before optimization."}
+{"time": 1790368277.7919695, "event": "sequences_validated", "max_tokens": 13, "train_rows": 18, "eval_rows": 2, "replay_rows": 0}
+{"time": 1790368277.8103294, "event": "baseline", "eval_loss": 4.094511032104492}
+{"time": 1790368277.8178003, "event": "step", "step": 1, "total_steps": 4, "phase": "fine_tune", "loss": 4.132888317108154, "learning_rate": 0.003, "grad_norm": 0.450237900018692}
+{"time": 1790368277.8199074, "event": "evaluation", "step": 1, "eval_loss": 4.089388847351074, "best_eval_loss": 4.089388847351074}
+{"time": 1790368277.832972, "event": "checkpoint", "step": 1, "path": "/workspace/scratch/5fab9b179c1e/forge-smoke/interrupted/checkpoint-000001"}
+{"time": 1790368277.8333468, "event": "cancelled", "step": 1}
+{"time": 1790368277.961701, "event": "inputs", "train_rows": 18, "eval_rows": 2, "replay_rows": 0, "total_steps": 4, "input_fingerprint": "cb8eaca3ec7d00c5d550592a7390a335acdc1ac6f004719bf4c7ee295c914fea", "runtime": {"python": "3.12.14", "packages": {"torch": "2.14.0", "transformers": "4.57.6", "peft": "0.18.1", "accelerate": "1.15.0", "safetensors": "0.8.0", "bitsandbytes": null}, "cuda": false, "devices": []}, "note": "Input preflight only. train performs tokenizer, sequence, model and target validation before optimization."}
+{"time": 1790368277.967875, "event": "sequences_validated", "max_tokens": 13, "train_rows": 18, "eval_rows": 2, "replay_rows": 0}
+{"time": 1790368277.992832, "event": "resumed", "step": 1, "checkpoint": "/workspace/scratch/5fab9b179c1e/forge-smoke/interrupted/checkpoint-000001"}
+{"time": 1790368278.0011237, "event": "step", "step": 2, "total_steps": 4, "phase": "fine_tune", "loss": 4.057668447494507, "learning_rate": 0.003, "grad_norm": 0.5339918732643127}
+{"time": 1790368278.0035048, "event": "evaluation", "step": 2, "eval_loss": 4.081437110900879, "best_eval_loss": 4.081437110900879}
+{"time": 1790368278.01828, "event": "checkpoint", "step": 2, "path": "/workspace/scratch/5fab9b179c1e/forge-smoke/resumed/checkpoint-000002"}
+{"time": 1790368278.0241213, "event": "step", "step": 3, "total_steps": 4, "phase": "fine_tune", "loss": 4.092936754226685, "learning_rate": 0.003, "grad_norm": 0.8193417191505432}
+{"time": 1790368278.026011, "event": "evaluation", "step": 3, "eval_loss": 4.072481632232666, "best_eval_loss": 4.072481632232666}
+{"time": 1790368278.0392468, "event": "checkpoint", "step": 3, "path": "/workspace/scratch/5fab9b179c1e/forge-smoke/resumed/checkpoint-000003"}
+{"time": 1790368278.0449312, "event": "step", "step": 4, "total_steps": 4, "phase": "fine_tune", "loss": 4.073928356170654, "learning_rate": 0.003, "grad_norm": 0.9564514756202698}
+{"time": 1790368278.0470512, "event": "evaluation", "step": 4, "eval_loss": 4.061085224151611, "best_eval_loss": 4.061085224151611}
+{"time": 1790368278.0611343, "event": "checkpoint", "step": 4, "path": "/workspace/scratch/5fab9b179c1e/forge-smoke/resumed/checkpoint-000004"}
+{"time": 1790368278.0870492, "event": "completed", "step": 4, "eval_loss": 4.061085224151611, "adapter_zip": "/workspace/scratch/5fab9b179c1e/forge-smoke/resumed/adapter.zip"}
+{
+  "passed": true,
+  "base_weights_unchanged": true,
+  "resume_matches_uninterrupted": true,
+  "reload_matches": true,
+  "adapter_changed": true,
+  "steps": 4,
+  "baseline_eval_loss": 4.094511032104492,
+  "final_eval_loss": 4.061085224151611,
+  "device": "cpu",
+  "model": "randomly initialized tiny Llama (test fixture)",
+  "packages": {
+    "torch": "2.14.0",
+    "transformers": "4.57.6",
+    "peft": "0.18.1",
+    "accelerate": "1.15.0",
+    "safetensors": "0.8.0",
+    "bitsandbytes": null
+  },
+  "scope": "Pipeline proof only; no pretrained large-model or CUDA benchmark."
+}

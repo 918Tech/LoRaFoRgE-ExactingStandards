@@ -1,0 +1,13 @@
+# LoRA Forge standalone design
+
+Build instruction from 918 Technologies: extract the useful fine-tuning capabilities in the three supplied notebooks into a standalone application. The application must perform actual LoRA optimization and remain independent of Kaggle, competition harnesses, solvers, seed mining, and synthetic weight packaging.
+
+Python 3.10+ package with a CLI and a loopback-only browser dashboard. One training process owns a run. Local files and explicitly selected Hugging Face model IDs are supported. Models and dependencies are not included. The first release targets a single NVIDIA GPU, with CPU full-precision support for small models and a self-contained tiny-model integration test. Distributed training, arbitrary prequantized checkpoints, GGUF training, and automatic hardware offload are outside this release.
+
+Strict JSON configuration controls model, tokenizer, data, LoRA rank, target modules, sequence size, stages, optional replay inputs, checkpoints, and loss weights. Data supports JSON/JSONL/CSV records and final-assistant chat messages. Inputs are deduplicated and grouped before splitting; explicit validation and replay sources must be disjoint. Overlong sequences fail before optimization; no answer truncation or silent data fallback. Assistant completion loss is causal, prompt-masked, and can emphasize a supplied final answer. Confidence weights are user-supplied, never inferred as facts from a category name.
+
+Training uses Hugging Face Transformers and PEFT. CUDA NF4 QLoRA is optional. Staged learning rates and replay reflect the source notebooks; a bounded learning-rate reduction on measured heldout regression supplies an honest auto-tuning control. SQLite records dataset identity, split, category and provenance without placing validation examples into replay. Checkpoints preserve adapters, optimizer, RNG, metrics and completed step; resume requires an identical training configuration and data/model identity. Cancellation leaves a resumable checkpoint and no successful export.
+
+Final output requires completed optimization, finite changed adapter tensors, an acceptable heldout loss gate, correct rank/dimensions, and a successful PEFT reload matching the in-memory adapter. The adapter ZIP contains actual adapter_config.json and adapter_model.safetensors. It is generic PEFT output, not a claim of competition compliance or a model-quality guarantee. Run logs and a report distinguish training completion from export acceptance.
+
+Local dashboard: configuration form, editable complete JSON, validate/start/stop, live losses/progress/logs, and adapter download. Server binds 127.0.0.1, rejects foreign Host/Origin and requires a random mutation token. It starts subprocesses without a shell.

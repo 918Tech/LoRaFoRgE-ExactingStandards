@@ -1,0 +1,93 @@
+test_answer_zero_and_duplicate (test_core.CoreTests.test_answer_zero_and_duplicate) ... ok
+test_chat_final_assistant_only (test_core.CoreTests.test_chat_final_assistant_only) ... ok
+test_conflicting_labels_rejected (test_core.CoreTests.test_conflicting_labels_rejected) ... ok
+test_empty_data_rejected (test_core.CoreTests.test_empty_data_rejected) ... ok
+test_group_split_no_leakage (test_core.CoreTests.test_group_split_no_leakage) ... ok
+test_input_output_alias (test_core.CoreTests.test_input_output_alias) ... ok
+test_invalid_numeric_values_rejected (test_core.CoreTests.test_invalid_numeric_values_rejected) ... ok
+test_overlong_input_never_silently_cropped (test_core.CoreTests.test_overlong_input_never_silently_cropped) ... ok
+test_prompt_and_answer_masks (test_core.CoreTests.test_prompt_and_answer_masks) ... ok
+test_unknown_config_rejected (test_core.CoreTests.test_unknown_config_rejected) ... ok
+test_confidence_affects_single_example_gradient (test_regressions.RegressionTests.test_confidence_affects_single_example_gradient) ... ok
+test_dead_worker_reports_failure (test_regressions.RegressionTests.test_dead_worker_reports_failure) ... ok
+test_late_stop_refuses_export (test_regressions.RegressionTests.test_late_stop_refuses_export) ... {"time": 1790368456.7507236, "event": "inputs", "train_rows": 18, "eval_rows": 2, "replay_rows": 0, "total_steps": 4, "input_fingerprint": "c9c6b7c2b34929487bcffaffb4723907b7dea0054c251aa78c9e14342e37594c", "runtime": {"python": "3.12.14", "packages": {"torch": "2.14.0", "transformers": "4.57.6", "peft": "0.18.1", "accelerate": "1.15.0", "safetensors": "0.8.0", "bitsandbytes": null}, "cuda": false, "devices": []}, "note": "Input preflight only. train performs tokenizer, sequence, model and target validation before optimization."}
+{"time": 1790368456.7593296, "event": "sequences_validated", "max_tokens": 13, "train_rows": 18, "eval_rows": 2, "replay_rows": 0}
+{"time": 1790368456.790568, "event": "baseline", "eval_loss": 4.094511032104492}
+{"time": 1790368456.8078527, "event": "step", "step": 1, "total_steps": 4, "phase": "fine_tune", "loss": 4.132888317108154, "learning_rate": 0.003, "grad_norm": 0.450237900018692}
+{"time": 1790368456.810348, "event": "evaluation", "step": 1, "eval_loss": 4.089388847351074, "best_eval_loss": 4.089388847351074}
+{"time": 1790368456.8352342, "event": "checkpoint", "step": 1, "path": "/tmp/tmpizeq1xwq/full/checkpoint-000001"}
+{"time": 1790368456.8425474, "event": "step", "step": 2, "total_steps": 4, "phase": "fine_tune", "loss": 4.057668447494507, "learning_rate": 0.003, "grad_norm": 0.5339918732643127}
+{"time": 1790368456.8444526, "event": "evaluation", "step": 2, "eval_loss": 4.081437110900879, "best_eval_loss": 4.081437110900879}
+{"time": 1790368456.8602834, "event": "checkpoint", "step": 2, "path": "/tmp/tmpizeq1xwq/full/checkpoint-000002"}
+{"time": 1790368456.8677258, "event": "step", "step": 3, "total_steps": 4, "phase": "fine_tune", "loss": 4.092936754226685, "learning_rate": 0.003, "grad_norm": 0.8193417191505432}
+{"time": 1790368456.8700397, "event": "evaluation", "step": 3, "eval_loss": 4.072481632232666, "best_eval_loss": 4.072481632232666}
+{"time": 1790368456.8866909, "event": "checkpoint", "step": 3, "path": "/tmp/tmpizeq1xwq/full/checkpoint-000003"}
+{"time": 1790368456.8930745, "event": "step", "step": 4, "total_steps": 4, "phase": "fine_tune", "loss": 4.073928356170654, "learning_rate": 0.003, "grad_norm": 0.9564514756202698}
+{"time": 1790368456.8950872, "event": "evaluation", "step": 4, "eval_loss": 4.061085224151611, "best_eval_loss": 4.061085224151611}
+{"time": 1790368456.9104655, "event": "checkpoint", "step": 4, "path": "/tmp/tmpizeq1xwq/full/checkpoint-000004"}
+{"time": 1790368456.9109983, "event": "cancelled", "step": 4}
+{"time": 1790368457.0795133, "event": "inputs", "train_rows": 18, "eval_rows": 2, "replay_rows": 0, "total_steps": 4, "input_fingerprint": "c9c6b7c2b34929487bcffaffb4723907b7dea0054c251aa78c9e14342e37594c", "runtime": {"python": "3.12.14", "packages": {"torch": "2.14.0", "transformers": "4.57.6", "peft": "0.18.1", "accelerate": "1.15.0", "safetensors": "0.8.0", "bitsandbytes": null}, "cuda": false, "devices": []}, "note": "Input preflight only. train performs tokenizer, sequence, model and target validation before optimization."}
+{"time": 1790368457.0852573, "event": "sequences_validated", "max_tokens": 13, "train_rows": 18, "eval_rows": 2, "replay_rows": 0}
+{"time": 1790368457.1044252, "event": "baseline", "eval_loss": 4.094511032104492}
+{"time": 1790368457.1116467, "event": "step", "step": 1, "total_steps": 4, "phase": "fine_tune", "loss": 4.132888317108154, "learning_rate": 0.003, "grad_norm": 0.450237900018692}
+{"time": 1790368457.115189, "event": "evaluation", "step": 1, "eval_loss": 4.089388847351074, "best_eval_loss": 4.089388847351074}
+{"time": 1790368457.1309166, "event": "checkpoint", "step": 1, "path": "/tmp/tmpizeq1xwq/interrupted/checkpoint-000001"}
+{"time": 1790368457.131349, "event": "cancelled", "step": 1}
+{"time": 1790368457.2832963, "event": "inputs", "train_rows": 18, "eval_rows": 2, "replay_rows": 0, "total_steps": 4, "input_fingerprint": "c9c6b7c2b34929487bcffaffb4723907b7dea0054c251aa78c9e14342e37594c", "runtime": {"python": "3.12.14", "packages": {"torch": "2.14.0", "transformers": "4.57.6", "peft": "0.18.1", "accelerate": "1.15.0", "safetensors": "0.8.0", "bitsandbytes": null}, "cuda": false, "devices": []}, "note": "Input preflight only. train performs tokenizer, sequence, model and target validation before optimization."}
+{"time": 1790368457.2908697, "event": "sequences_validated", "max_tokens": 13, "train_rows": 18, "eval_rows": 2, "replay_rows": 0}
+{"time": 1790368457.3113759, "event": "resumed", "step": 1, "checkpoint": "/tmp/tmpizeq1xwq/interrupted/checkpoint-000001"}
+{"time": 1790368457.319153, "event": "step", "step": 2, "total_steps": 4, "phase": "fine_tune", "loss": 4.057668447494507, "learning_rate": 0.003, "grad_norm": 0.5339918732643127}
+{"time": 1790368457.321088, "event": "evaluation", "step": 2, "eval_loss": 4.081437110900879, "best_eval_loss": 4.081437110900879}
+{"time": 1790368457.3413377, "event": "checkpoint", "step": 2, "path": "/tmp/tmpizeq1xwq/resumed/checkpoint-000002"}
+{"time": 1790368457.3489118, "event": "step", "step": 3, "total_steps": 4, "phase": "fine_tune", "loss": 4.092936754226685, "learning_rate": 0.003, "grad_norm": 0.8193417191505432}
+{"time": 1790368457.351241, "event": "evaluation", "step": 3, "eval_loss": 4.072481632232666, "best_eval_loss": 4.072481632232666}
+{"time": 1790368457.366773, "event": "checkpoint", "step": 3, "path": "/tmp/tmpizeq1xwq/resumed/checkpoint-000003"}
+{"time": 1790368457.3739123, "event": "step", "step": 4, "total_steps": 4, "phase": "fine_tune", "loss": 4.073928356170654, "learning_rate": 0.003, "grad_norm": 0.9564514756202698}
+{"time": 1790368457.3767028, "event": "evaluation", "step": 4, "eval_loss": 4.061085224151611, "best_eval_loss": 4.061085224151611}
+{"time": 1790368457.3917947, "event": "checkpoint", "step": 4, "path": "/tmp/tmpizeq1xwq/resumed/checkpoint-000004"}
+{"time": 1790368457.4232757, "event": "completed", "step": 4, "eval_loss": 4.061085224151611, "adapter_zip": "/tmp/tmpizeq1xwq/resumed/adapter.zip"}
+ok
+test_tokenizer_normalizer_changes_identity (test_regressions.RegressionTests.test_tokenizer_normalizer_changes_identity) ... ok
+test_local_dashboard_boundaries (test_server.ServerTests.test_local_dashboard_boundaries) ... ok
+test_real_adapter_training_and_resume (test_training.TrainingTests.test_real_adapter_training_and_resume) ... {"time": 1790368458.1214807, "event": "inputs", "train_rows": 18, "eval_rows": 2, "replay_rows": 0, "total_steps": 4, "input_fingerprint": "bf0740ec4312e5efb0b2b358e2136fc63c5795f7036752b6923970edafb2e91b", "runtime": {"python": "3.12.14", "packages": {"torch": "2.14.0", "transformers": "4.57.6", "peft": "0.18.1", "accelerate": "1.15.0", "safetensors": "0.8.0", "bitsandbytes": null}, "cuda": false, "devices": []}, "note": "Input preflight only. train performs tokenizer, sequence, model and target validation before optimization."}
+{"time": 1790368458.126395, "event": "sequences_validated", "max_tokens": 13, "train_rows": 18, "eval_rows": 2, "replay_rows": 0}
+{"time": 1790368458.1437867, "event": "baseline", "eval_loss": 4.094511032104492}
+{"time": 1790368458.1528568, "event": "step", "step": 1, "total_steps": 4, "phase": "fine_tune", "loss": 4.132888317108154, "learning_rate": 0.003, "grad_norm": 0.450237900018692}
+{"time": 1790368458.154891, "event": "evaluation", "step": 1, "eval_loss": 4.089388847351074, "best_eval_loss": 4.089388847351074}
+{"time": 1790368458.1694288, "event": "checkpoint", "step": 1, "path": "/tmp/tmpa9n2nq8y/full/checkpoint-000001"}
+{"time": 1790368458.176492, "event": "step", "step": 2, "total_steps": 4, "phase": "fine_tune", "loss": 4.057668447494507, "learning_rate": 0.003, "grad_norm": 0.5339918732643127}
+{"time": 1790368458.1799636, "event": "evaluation", "step": 2, "eval_loss": 4.081437110900879, "best_eval_loss": 4.081437110900879}
+{"time": 1790368458.194307, "event": "checkpoint", "step": 2, "path": "/tmp/tmpa9n2nq8y/full/checkpoint-000002"}
+{"time": 1790368458.201792, "event": "step", "step": 3, "total_steps": 4, "phase": "fine_tune", "loss": 4.092936754226685, "learning_rate": 0.003, "grad_norm": 0.8193417191505432}
+{"time": 1790368458.204385, "event": "evaluation", "step": 3, "eval_loss": 4.072481632232666, "best_eval_loss": 4.072481632232666}
+{"time": 1790368458.2205026, "event": "checkpoint", "step": 3, "path": "/tmp/tmpa9n2nq8y/full/checkpoint-000003"}
+{"time": 1790368458.226204, "event": "step", "step": 4, "total_steps": 4, "phase": "fine_tune", "loss": 4.073928356170654, "learning_rate": 0.003, "grad_norm": 0.9564514756202698}
+{"time": 1790368458.2290199, "event": "evaluation", "step": 4, "eval_loss": 4.061085224151611, "best_eval_loss": 4.061085224151611}
+{"time": 1790368458.2443748, "event": "checkpoint", "step": 4, "path": "/tmp/tmpa9n2nq8y/full/checkpoint-000004"}
+{"time": 1790368458.2735639, "event": "completed", "step": 4, "eval_loss": 4.061085224151611, "adapter_zip": "/tmp/tmpa9n2nq8y/full/adapter.zip"}
+{"time": 1790368458.6253543, "event": "inputs", "train_rows": 18, "eval_rows": 2, "replay_rows": 0, "total_steps": 4, "input_fingerprint": "bf0740ec4312e5efb0b2b358e2136fc63c5795f7036752b6923970edafb2e91b", "runtime": {"python": "3.12.14", "packages": {"torch": "2.14.0", "transformers": "4.57.6", "peft": "0.18.1", "accelerate": "1.15.0", "safetensors": "0.8.0", "bitsandbytes": null}, "cuda": false, "devices": []}, "note": "Input preflight only. train performs tokenizer, sequence, model and target validation before optimization."}
+{"time": 1790368458.638353, "event": "sequences_validated", "max_tokens": 13, "train_rows": 18, "eval_rows": 2, "replay_rows": 0}
+{"time": 1790368458.6974328, "event": "baseline", "eval_loss": 4.094511032104492}
+{"time": 1790368458.7251244, "event": "step", "step": 1, "total_steps": 4, "phase": "fine_tune", "loss": 4.132888317108154, "learning_rate": 0.003, "grad_norm": 0.450237900018692}
+{"time": 1790368458.7273333, "event": "evaluation", "step": 1, "eval_loss": 4.089388847351074, "best_eval_loss": 4.089388847351074}
+{"time": 1790368458.7609882, "event": "checkpoint", "step": 1, "path": "/tmp/tmpa9n2nq8y/interrupted/checkpoint-000001"}
+{"time": 1790368458.762845, "event": "cancelled", "step": 1}
+{"time": 1790368459.0040662, "event": "inputs", "train_rows": 18, "eval_rows": 2, "replay_rows": 0, "total_steps": 4, "input_fingerprint": "bf0740ec4312e5efb0b2b358e2136fc63c5795f7036752b6923970edafb2e91b", "runtime": {"python": "3.12.14", "packages": {"torch": "2.14.0", "transformers": "4.57.6", "peft": "0.18.1", "accelerate": "1.15.0", "safetensors": "0.8.0", "bitsandbytes": null}, "cuda": false, "devices": []}, "note": "Input preflight only. train performs tokenizer, sequence, model and target validation before optimization."}
+{"time": 1790368459.008833, "event": "sequences_validated", "max_tokens": 13, "train_rows": 18, "eval_rows": 2, "replay_rows": 0}
+{"time": 1790368459.0278013, "event": "resumed", "step": 1, "checkpoint": "/tmp/tmpa9n2nq8y/interrupted/checkpoint-000001"}
+{"time": 1790368459.0359104, "event": "step", "step": 2, "total_steps": 4, "phase": "fine_tune", "loss": 4.057668447494507, "learning_rate": 0.003, "grad_norm": 0.5339918732643127}
+{"time": 1790368459.0382838, "event": "evaluation", "step": 2, "eval_loss": 4.081437110900879, "best_eval_loss": 4.081437110900879}
+{"time": 1790368459.0542676, "event": "checkpoint", "step": 2, "path": "/tmp/tmpa9n2nq8y/resumed/checkpoint-000002"}
+{"time": 1790368459.06016, "event": "step", "step": 3, "total_steps": 4, "phase": "fine_tune", "loss": 4.092936754226685, "learning_rate": 0.003, "grad_norm": 0.8193417191505432}
+{"time": 1790368459.0636246, "event": "evaluation", "step": 3, "eval_loss": 4.072481632232666, "best_eval_loss": 4.072481632232666}
+{"time": 1790368459.0770864, "event": "checkpoint", "step": 3, "path": "/tmp/tmpa9n2nq8y/resumed/checkpoint-000003"}
+{"time": 1790368459.084772, "event": "step", "step": 4, "total_steps": 4, "phase": "fine_tune", "loss": 4.073928356170654, "learning_rate": 0.003, "grad_norm": 0.9564514756202698}
+{"time": 1790368459.0870466, "event": "evaluation", "step": 4, "eval_loss": 4.061085224151611, "best_eval_loss": 4.061085224151611}
+{"time": 1790368459.1012971, "event": "checkpoint", "step": 4, "path": "/tmp/tmpa9n2nq8y/resumed/checkpoint-000004"}
+{"time": 1790368459.1275203, "event": "completed", "step": 4, "eval_loss": 4.061085224151611, "adapter_zip": "/tmp/tmpa9n2nq8y/resumed/adapter.zip"}
+ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 8.534s
+
+OK

@@ -1,0 +1,6 @@
+{
+  "passed": true,
+  "error": "ValueError: Resume identity mismatch: config, model, data, runtime, or device changed",
+  "step": 0,
+  "export_created": false
+}

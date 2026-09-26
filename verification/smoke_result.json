@@ -1,0 +1,21 @@
+{
+  "passed": true,
+  "base_weights_unchanged": true,
+  "resume_matches_uninterrupted": true,
+  "reload_matches": true,
+  "adapter_changed": true,
+  "steps": 4,
+  "baseline_eval_loss": 4.094511032104492,
+  "final_eval_loss": 4.061085224151611,
+  "device": "cpu",
+  "model": "randomly initialized tiny Llama (test fixture)",
+  "packages": {
+    "torch": "2.14.0",
+    "transformers": "4.57.6",
+    "peft": "0.18.1",
+    "accelerate": "1.15.0",
+    "safetensors": "0.8.0",
+    "bitsandbytes": null
+  },
+  "scope": "Pipeline proof only; no pretrained large-model or CUDA benchmark."
+}

@@ -1,0 +1,22 @@
+{
+  "application": "LoRA Forge",
+  "version": "1.0.0",
+  "tests_passed": 16,
+  "tests_failed": 0,
+  "real_cpu_training": true,
+  "frozen_base_weights_verified": true,
+  "saved_adapter_reloaded": true,
+  "resume_bitwise_equal_cpu": true,
+  "changed_resume_config_rejected": true,
+  "late_cancellation_export_blocked": true,
+  "singleton_confidence_gradient_verified": true,
+  "tokenizer_identity_change_detected": true,
+  "dead_worker_failure_reported": true,
+  "browser_training_and_download": true,
+  "browser_js_errors": 0,
+  "mobile_horizontal_overflow": false,
+  "cuda_tested": false,
+  "qlora_tested": false,
+  "large_pretrained_model_tested": false,
+  "windows_launcher_executed": false
+}

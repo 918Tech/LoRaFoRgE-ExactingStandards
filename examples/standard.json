@@ -1,0 +1,42 @@
+{
+  "model": "../models/base",
+  "train_files": [
+    "sample.jsonl"
+  ],
+  "eval_files": [],
+  "replay_files": [],
+  "output_dir": "../runs/standard",
+  "tokenizer": "",
+  "revision": "main",
+  "offline": true,
+  "trust_remote_code": false,
+  "device": "auto",
+  "quantization": "none",
+  "dtype": "auto",
+  "rank": 32,
+  "alpha": 64,
+  "dropout": 0.02,
+  "use_rslora": true,
+  "target_modules": [
+    "q_proj",
+    "k_proj",
+    "v_proj",
+    "o_proj"
+  ],
+  "max_seq_length": 1024,
+  "batch_size": 1,
+  "gradient_accumulation": 4,
+  "learning_rate": 0.0001,
+  "max_steps": 100,
+  "phases": [],
+  "replay_fraction": 0.15,
+  "answer_weight": 2.4,
+  "gradient_checkpointing": true,
+  "max_grad_norm": 1.0,
+  "eval_fraction": 0.1,
+  "checkpoint_steps": 25,
+  "max_eval_loss_increase": 0.05,
+  "auto_tune": true,
+  "seed": 918,
+  "threads": 4
+}
